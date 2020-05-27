@@ -1,0 +1,78 @@
+.container {
+    display: grid;
+    height: 90vh;
+    margin-top: 3em;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: repeat (3, 1fr);
+    grid-gap: 15px;
+    grid-auto-flow: row;
+    background-color: skyblue;
+}
+
+.box {
+    background-color: antiquewhite;
+    width: minmax(450px, 2fr);
+    height: minmax(300px, 1fr);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    color: rgb(77, 101, 170);
+    text-align: center;
+    box-shadow: 4px 8px 6px 20px rgb(154, 238, 238);
+}
+
+.blwerkstatt {
+    background-image: url(Blumenwerkstatt.png); 
+    object-fit: contain;
+    background-size: cover;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+.florist {
+    background-image: url(Florist.png); 
+    object-fit: contain;
+    background-size: cover;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+.kreativ {
+    background-image: url(Kreativ.png); 
+    object-fit: contain;
+    background-size: cover;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+.bub {
+    background-image: url(bub.png); 
+    object-fit: contain;
+    background-size: cover;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+
+.box-title {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .box:hover .box-title {
+    opacity: 1;
+  }
+
+  .box-title-text {
+    background-color: rgb(50, 138, 215);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 8px;
+  }
+
+  
+  

@@ -1,6 +1,6 @@
 body {
     margin: auto 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .zone {
     /*padding:30px 50px;
@@ -58,7 +58,7 @@ a {
 }
 
 .contain {
-    object-fit: contain;
+    object-fit: cover;
     width: 50vh;
     height: auto;
 }
@@ -78,30 +78,12 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-.box > img {
-    width: 100%;
-}
-
-.box {
-    background-color: #444;
-    padding: 130px;
-    margin: 20px;
-}
-
 .text-center {
     text-align: center;
 }
 
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-}
+.
 
-.box:hover {
-    transform: scale(1.1);
-}
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************

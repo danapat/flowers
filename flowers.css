@@ -4,51 +4,44 @@
     margin-top: 3em;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: repeat (3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 30px;
     grid-auto-flow: row;
-    background-color: skyblue;
+    background-color: rgb(242, 173, 152);
 }
 
 .box {
     background-color: antiquewhite;
-    width: minmax(450px, 2fr);
+    width: minmax(350px, 2fr);
     height: minmax(300px, 1fr);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
     color: rgb(77, 101, 170);
     text-align: center;
-    box-shadow: 4px 8px 6px 20px rgb(154, 238, 238);
+    box-shadow: 4px 8px 6px 20px rgb(242, 151, 94);
+}
+
+.box img {
+    width: 90%;
+    height: 300px;
+    opacity: 1;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .blwerkstatt {
-    background-image: url(Blumenwerkstatt.png); 
-    object-fit: contain;
-    background-size: cover;
-    opacity: 1;
     backface-visibility: hidden;
 }
 
 .florist {
-    background-image: url(Florist.png); 
-    object-fit: contain;
-    background-size: cover;
-    opacity: 1;
     backface-visibility: hidden;
 }
 
 .kreativ {
-    background-image: url(Kreativ.png); 
-    object-fit: contain;
-    background-size: cover;
-    opacity: 1;
     backface-visibility: hidden;
 }
 
 .bub {
-    background-image: url(bub.png); 
-    object-fit: contain;
-    background-size: cover;
-    opacity: 1;
     backface-visibility: hidden;
 }
 
@@ -61,12 +54,8 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  
-  .box:hover .box-title {
-    opacity: 1;
-  }
 
-  .box-title-text {
+.box-title-text {
     background-color: rgb(50, 138, 215);
     color: white;
     font-size: 16px;
@@ -74,5 +63,16 @@
     border-radius: 8px;
   }
 
+.box:hover {
+    transform: scale(1.1);
+}
+
+.box:hover .img {
+    opacity: 0,3;
+}
+
+.box:hover .box-title {
+    opacity: 1;
+  }
   
   

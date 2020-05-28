@@ -7,9 +7,12 @@
     grid-gap: 30px;
     grid-auto-flow: row;
     background-color: rgb(242, 173, 152);
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 .box {
+    position: relative;
     background-color: antiquewhite;
     width: minmax(350px, 2fr);
     height: minmax(300px, 1fr);
@@ -63,16 +66,13 @@
     border-radius: 8px;
   }
 
-.box:hover {
-    transform: scale(1.1);
-}
-
-.box:hover .img {
-    opacity: 0,3;
-}
-
-.box:hover .box-title {
+  .box:hover .image {
+    opacity: 0.3;
+  }
+  
+  .box:hover .box-title {
     opacity: 1;
   }
+
   
   
